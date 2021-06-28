@@ -18,6 +18,8 @@ import {
   masterChefPresets,
   PANCAKE_ROUTER,
   routerPresets,
+  PUPPY_MC,
+  PUPPY_ROUTER,
 } from "./utils/constants";
 
 function getLibrary(provider: any, connector?: any) {
@@ -121,6 +123,19 @@ function App() {
                 />{" "}
                 RobinhoodSwap (RBH){" "}
                 <a target="_blank" href="https://robinhoodswap.finance">
+                  &rarr;
+                </a>
+              </div>{" "}
+              <div className="d-flex">
+                <input
+                  type="radio"
+                  name="preset"
+                  onClick={() => {
+                    presetSelect(PUPPY_MC, PUPPY_ROUTER);
+                  }}
+                />{" "}
+                PuppySwap (PUPPY){" "}
+                <a target="_blank" href="https://puppyswap.com">
                   &rarr;
                 </a>
               </div>{" "}
