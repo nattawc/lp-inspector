@@ -20,6 +20,7 @@ import {
   routerPresets,
   PUPPY_MC,
   PUPPY_ROUTER,
+  VIXA_MC,
 } from "./utils/constants";
 
 function getLibrary(provider: any, connector?: any) {
@@ -136,6 +137,19 @@ function App() {
                 />{" "}
                 PuppySwap (PUPPY){" "}
                 <a target="_blank" href="https://puppyswap.com">
+                  &rarr;
+                </a>
+              </div>{" "}
+              <div className="d-flex">
+                <input
+                  type="radio"
+                  name="preset"
+                  onClick={() => {
+                    presetSelect(VIXA_MC, PANCAKE_ROUTER);
+                  }}
+                />{" "}
+                ViXA (VIXA){" "}
+                <a target="_blank" href="https://vixa.finance">
                   &rarr;
                 </a>
               </div>{" "}
