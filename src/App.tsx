@@ -145,19 +145,6 @@ function App() {
                   type="radio"
                   name="preset"
                   onClick={() => {
-                    presetSelect(VIXA_MC, PANCAKE_ROUTER);
-                  }}
-                />{" "}
-                ViXA (VIXA){" "}
-                <a target="_blank" href="https://vixa.finance">
-                  &rarr;
-                </a>
-              </div>{" "}
-              <div className="d-flex">
-                <input
-                  type="radio"
-                  name="preset"
-                  onClick={() => {
                     resetSelect();
                   }}
                 />{" "}
